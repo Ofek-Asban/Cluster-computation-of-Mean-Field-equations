@@ -30,3 +30,5 @@ The number of realizations, n, is chosen such that $n \times N = 10^6$ where N i
 
 ## Files in the repository
 
+The files presented here are for the solution of Eq (2). The same procedure is done for solving Eq (1).
+
