@@ -35,3 +35,17 @@ The number of realizations, n, is chosen such that $n \times N = 10^6$ where N i
 
 The files presented here are for the solution of Eq (2). A similar code (although with different random distributions) is used for solving Eq (1).
 
+### DistanceMatrix2D(3D).m
+
+Input N the number of sites. Initialzes seed for generating new random numners. Creates a 2D or 3D vactor of coordinates for N sites. Calculates the matrix $r_{ij}$ with periodic boundary conditions. 
+
+### HcTLS.m
+
+
+
+### MasterDiffDistanceMatrices.sh
+
+### ReRun.sh
+
+### DecayRateMatrixTLS.m
+
