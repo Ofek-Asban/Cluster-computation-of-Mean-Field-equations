@@ -33,7 +33,7 @@ The number of realizations, n, is chosen such that $n \times N = 10^6$ where N i
 
 ## Files in the repository
 
-The files presented here are for the solution of Eq (2) using MATLAB. A similar code (although with different random distributions) is used for solving Eq (1).
+The files presented here are for the solution of Eq (2) using MATLAB.
 
 ### DistanceMatrix2D(3D).m
 
@@ -53,6 +53,10 @@ Calles ReRun.sh script at the end of copmutation.
 
 Scans all the output files and runs again solution files that are missing (due to prossecor override by other users or processor crushes)
 
-### DecayRateMatrixTLS.m
+### DecayRateMatrixTLS.m (This file is part of the calculation of the dynamics, It uses the solution of Eq (2))
 
-Computed the distribution function of A_{ij} eigenvalues for two similar cases (with and without correlation) and compare them (see result in Figs 18, 19, 20) in the paper ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.95.144207)) 
+Computed the distribution function of A_{ij} eigenvalues for two similar cases (with and without correlation) and compare them (see result in Figs 18, 19, 20) in the paper ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.95.144207)).
+
+A similar code (although with different random distributions) is used for solving Eq (1) and the matrix A_{ij} of the EG system.
+
+
