@@ -33,7 +33,7 @@ The number of realizations, n, is chosen such that $n \times N = 10^6$ where N i
 
 ## Files in the repository
 
-The files presented here are for the solution of Eq (2). A similar code (although with different random distributions) is used for solving Eq (1).
+The files presented here are for the solution of Eq (2) using MATLAB. A similar code (although with different random distributions) is used for solving Eq (1).
 
 ### DistanceMatrix2D(3D).m
 
@@ -41,11 +41,18 @@ Input N the number of sites. Initialzes seed for generating new random numners. 
 
 ### HcTLS.m
 
-
+Input N, and the number of the specific realization. Increasing and than lowering the temperature to find a lower local minina. For each temperatur value fined a solution to equations (2) using relaxation iterative method. (This is done using vectorization for efficiency). Output a solution vector of Eq. (2).  
 
 ### MasterDiffDistanceMatrices.sh
 
+Sends n=100, 1000, 10000 Jobs (dependsing on system size N) to different processors in the cluster. Each job runs HcTLS.m with different seed (responsible for new random numbers in each realization). The script makes sure that in any given time there are no more than 1000 Job to avoid an overuse of the culster. 
+
+Calles ReRun.sh script at the end of copmutation.
+
 ### ReRun.sh
+
+Scans all the output files and runs again solution files that are missing (due to prossecor override by other users or processor crushes)
 
 ### DecayRateMatrixTLS.m
 
+Computed the distribution function of A_{ij} eigenvalues for two similar cases (with and without correlation) and compare them (see result in Figs 18, 19, 20) in the paper ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.95.144207)) 
