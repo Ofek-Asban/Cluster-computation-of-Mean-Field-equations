@@ -41,7 +41,11 @@ Input N the number of sites. Initialzes seed for generating new random numners. 
 
 ### HcTLS.m
 
-Input N, and the number of the specific realization. Increasing and than lowering the temperature to find a lower local minina. For each temperatur value fined a solution to equations (2) using relaxation iterative method. (This is done using vectorization for efficiency). Output a solution vector of Eq. (2).  
+Main input parameters input parameters N, and the realization number. Increasing and than lowering the temperature to find a lower local minina. For each temperatur value calles  EnergyIteration.m find a solution to equations (2). Output a solution vector of Eq. (2).  
+
+### EnergyIteration.m
+
+Main input parameters N and Temperature value. Using relaxation iterative method to find solution to euqation (2). (This algorithm is the bottleneck of the computation, thus it is implemented in vectorized form for efficiency).
 
 ### MasterDiffDistanceMatrices.sh
 
@@ -57,6 +61,7 @@ Scans all the output files and runs again solution files that are missing (due t
 
 Computed the distribution function of A_{ij} eigenvalues for two similar cases (with and without correlation) and compare them (see result in Figs 18, 19, 20) in the paper ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.95.144207)).
 
-A similar code (although with different random distributions) is used for solving Eq (1) and the matrix A_{ij} of the EG system.
+### HcEG.m and EnergyIterationsEG.m
+This files has the same functionality as EnergyIteration.m HcTLS.m (explined above) but for solving equation (1).
 
 
