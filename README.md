@@ -31,9 +31,7 @@ The three steps are computationally costly, comutation time of steps (a) and (b)
 
 The number of realizations, n, is chosen such that $n \times N = 10^6$ where N is the the number of sites in the EG system if spins in the SG system. 
 
-## Files in the repository
-
-The files presented here are for the solution of Eq (2) using MATLAB.
+## Files in the repository for solving Eq (2)
 
 ### DistanceMatrix2D(3D).m
 
@@ -61,7 +59,9 @@ Scans all the output files and runs again solution files that are missing (due t
 
 Computed the distribution function of A_{ij} eigenvalues for two similar cases (with and without correlation) and compare them (see result in Figs 18, 19, 20) in the paper ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.95.144207)).
 
+## Files in the repository for solving Eq (1)
+
 ### HcEG.m and EnergyIterationsEG.m
-This files has the same functionality as EnergyIteration.m HcTLS.m (explined above) but for solving equation (1).
+This files has the same functionality as EnergyIteration.m HcTLS.m (shown above) but for solving equation (1).
 
 
