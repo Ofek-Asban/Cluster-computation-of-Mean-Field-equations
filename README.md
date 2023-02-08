@@ -14,6 +14,9 @@ Similarly the SG Mean-Field equations are,
 $$(2) \\ \Delta_i' = \Delta_i + \frac{1}{4}\sum_{j (\neq j)} \frac{u_{ij}}{r^3_{ij}}\tanh\left(\frac{\Delta_j'}{2T}\right),$$
 where the on-site energy $\epsilon_i$ and the spin bias energy $\Delta_i$ are modeled as uniformly distributed numbers, $r_{ij}$ is the distance between sites i and j in two dimentions and thus represented by symmetric and uniformly distributed matrix with 0 diagonal (with periodic boundary condisitons), and $u_{ij}$ is a Gaussian distributed parameter with controlled variance.
 
+### Few words on the statistics of the dynamics
+The time evolution is dictated by the linearzed rate/master equaiton, $\partial_t p_i = \sum_{j(\neq i)} A_{ij} p_j$, which after diagonalizations takes the form, $\partial_t p_i' = -\sum_{j(\neq i)} \lambda_j p_j'$ where p' are related to p by the transformation that diagonalized A matrix. Specifically for the the EG system the matrix A depends exponentially on the energy solutions $E_j$ and the distance matrices, $A_{ij} \sim e^{-r_{ij}/\xi - (|E_i-E_j| + |E_i| - |E_j|/ 2T)}$ where $\xi$ is variables called localization length of the electron wave function. The distribution of eigenvalues is calculated numerically and takes the form of $\rho(\lambda) = 1/\lambda$ (in the contuous limit). This form is responsible for the logarithmic time evolution of the system. The rates of the spin-glass system have similar distribution of rates and thus as expected also logarithmic time evolution. The key take is that the distribution of eigenvalues of the radom matrix A_{ij} takes a key role in the analysis.  
+
 ## Structure of the Algorithm
 One of the methods to solve equations (1) and (2) (i.e. find values of $E_i$ and $\Delta_i'$ that satisfy equations (1) and (2)). I chose to use relaxation method which contains two steps:
 
