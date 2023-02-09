@@ -62,4 +62,4 @@ Computed the distribution function of A_{ij} eigenvalues for two similar cases (
 ## Files in the repository for solving Eq (1) 
 
 ### HcEG.m and EnergyIterationsEG.m
-This files has the same functionality as EnergyIteration.m HcTLS.m (shown above) but for solving equation (1).
+This files has the same functionality as EnergyIteration.m HcTLS.m (shown above) but for solving equation (1). 
