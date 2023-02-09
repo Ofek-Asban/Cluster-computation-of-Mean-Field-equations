@@ -9,6 +9,7 @@ To find the thermal (or ground state) the mean field approximation is applies. I
 The goal is to find the solution of the self-consistent equations of the EG and SG systems.
 
 The EG Mean-Field equations are, 
+![image](https://user-images.githubusercontent.com/124721686/217921337-39284280-d819-4f1a-8a36-218ad9f60c32.png)
 $$(1) \\ E_i = \epsilon_i + \frac{1}{2}\sum_{j (\neq j)} \frac{e^2}{r_{ij}}(e^{E_j/T} + 1)^{-1}.$$
 Similarly the SG Mean-Field equations are,
 $$(2) \\ \Delta_i' = \Delta_i + \frac{1}{4}\sum_{j (\neq j)} \frac{u_{ij}}{r^3_{ij}}\tanh\left(\frac{\Delta_j'}{2T}\right),$$
